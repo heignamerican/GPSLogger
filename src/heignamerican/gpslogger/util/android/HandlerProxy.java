@@ -57,6 +57,7 @@ public class HandlerProxy {
 				}
 			});
 			mNullContent = tProxyInstance;
+			mContent = mNullContent;
 		}
 
 		public void set(T aContent) {
