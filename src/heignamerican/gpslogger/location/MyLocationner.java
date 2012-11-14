@@ -67,10 +67,6 @@ public abstract class MyLocationner {
 			for (LocationListener tLocationListener : mLocationListeners) {
 				mLocationManager.requestLocationUpdates(tProvider, MIN_TIME_MILLIS, MIN_DISTANCE, tLocationListener);
 			}
-
-			Location tLastKnownLocation = mLocationManager.getLastKnownLocation(tProvider);
-			if (tLastKnownLocation != null)
-				locationChanged(tLastKnownLocation);
 		}
 	}
 
